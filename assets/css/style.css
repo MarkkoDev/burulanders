@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+.card-container {
+  width: 50vw;
+  height: 50vw;
+  background-color: aquamarine;
+  border: 5px solid brown;
+  display: flex;
+  flex-direction: row; /* es como se mueve el eje principal */
+  flex-wrap: nowrap; /* como se debe comportar cuando los componentes no entran en una linea */
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.flex-item {
+  width: 15%;
+  height: 15%;
+  background-color: blanchedalmond;
+  border: 1px solid rgb(165, 112, 42);
+  overflow: hidden;
+}
