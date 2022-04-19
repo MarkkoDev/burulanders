@@ -1,22 +1,60 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color:white;
+  color: black;
+}
+
+.navbar a.active {
+  background-color:white;
+  color: black;
+  font-weight: bold;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
 * {
   box-sizing: border-box;
 }
-.card-container {
-  width: 50vw;
-  height: 50vw;
-  background-color: aquamarine;
-  border: 5px solid brown;
-  display: flex;
-  flex-direction: row; /* es como se mueve el eje principal */
-  flex-wrap: nowrap; /* como se debe comportar cuando los componentes no entran en una linea */
-  align-items: flex-start;
-  justify-content: space-around;
-}
-
-.flex-item {
-  width: 15%;
-  height: 15%;
-  background-color: blanchedalmond;
-  border: 1px solid rgb(165, 112, 42);
-  overflow: hidden;
 }
