@@ -1,0 +1,59 @@
+.LS81yb, .oKdM2c {
+    width: 100%;
+    margin-top: 100;
+    margin-bottom: 0;
+    max-width: 1280px;
+    zoom: 1;
+}
+
+.map { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 200px;
+    grid-template-areas:
+      ". a a ."
+      ". a a .";
+
+}
+.texto-detalle-cards{
+
+    display: grid;
+    grid-template-rows: repeat(3,100px);
+    height: 500px;
+    width: 1050px;
+    grid-gap: 100px;
+    grid-template-areas:
+    "a a b"
+    "a a b"
+    "c d d";
+
+}
+
+.texto-detalle-cards li li>p {
+
+    margin-left: 15pt;
+
+
+}
+.texto-detalle-cards p {
+
+    line-height: 1.5; 
+    margin-left: 0; 
+    padding-left: 0; 
+    text-indent: 0;
+}
+
+
+
+
+
+.item1 {
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .item2 {
+    grid-area: b;
+  }

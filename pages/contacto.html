@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burulanders</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/contacto.css" />
+    
+  </head>
+  <body>
+    <nav class="navbar">
+      <div id="navbar-logo">
+        <a href="#"
+          ><img src="../assets/images/logo.jpg" class="primary-icon" alt=""
+        /></a>
+      </div>
+      <ul class="nav-list" id="navi-list">
+        <li class="list-item"><a href="../index.html">Inicio</a></li>
+        <li class="list-item"><a href="../pages/consultorio-puericultura.html">Consultorio de Puericultura</a></li>
+        <li class="list-item"><a href="../pages/asesoria-porteo.html">Asesoria de Porteo</a></li>
+<!--         <li class="list-item"><a href="../pages/teleconsultas.html">Teleconsultas</a></li>
+        <li class="list-item"><a href="../pages/acompañamiento.html">Acompañamiento Integral</a></li>
+        <li class="list-item"><a href="../pages/visitas.html">Visitas Domiciliarias</a></li> -->
+        <li class="list-item"><a href="../pages/charlas.html">Charlas y Talleres</a></li>
+        <li class="list-item"><a href="#">Contacto</a></li>
+      </ul>
+      <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
+    <div class="formulario">
+      <form id="formulario" action="" method="get" onsubmit="return valida(this)">
+          <div id="mc_embed_signup_scroll">
+        <h2>Deja tus datos para recibir información</h2>
+      <div class="field-group">
+        <label for="email">Email </label>
+        <input type="text" value="" class="required" id="email" size="25">
+      </div>
+      <div class="field-group">
+        <label for="nombre">Nombre </label>
+        <input type="text" value="" class="required" id="nombre">
+      </div>
+      <div class="field-group">
+        <label for="apellido">Apellido </label>
+        <input type="text" value="" class="required" id="apellido">
+      </div>
+      <div class="field-group">
+        <label for="telefono">Telefono de contacto </label>
+        <input type="text" class="" value="" id="telefono">
+      </div>
+      <div class="field-group input-group">
+          <strong>Me interesa recibir información de </strong>
+          <ul><li><input type="checkbox" name="Lactancia" id="lactancia"><label for="Lactancia">Lactancia</label></li>
+      <li><input type="checkbox" name="Porteo" id="porteo"><label for="Porteo">Porteo</label></li>
+      <li><input type="checkbox" name="Evento" id="evento"><label for="Evento">Eventos</label></li>
+      </ul>
+      </div>
+        <div id="responses" class="clear">
+          <div class="response" id="error-response" style="display:none"></div>
+          <div class="response" id="success-response" style="display:none"></div>
+        </div> 
+        <div class="clear"><input type="submit" value="Enviar"/></div>
+        </div>
+      </form>
+      </div>
+
+      
+</body>
+<script src="../assets/js/validacion.js"></script>
+</html>
+
+
