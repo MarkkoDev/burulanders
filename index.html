@@ -5,21 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Burulanders</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/cards.css" />
   </head>
   <body>
-    <header></header>
-    <nav>
-      <a href="">Inicio</a> |
-      <a href="">Consultorio de Puericultura</a> |
-      <a href="">Asesoria de Porteo</a> |
-      <a href="">Teleconsultas</a> |
-      <a href="">Acompañamiento Integral</a> |
-      <a href="">Visitas Domiciliarias</a> |
-      <a href="">Charlas y Talleres</a> |
-      <a href="">Documentos</a> |
-      <a href="">Chat</a> |
+    <nav class="navbar">
+      <div id="navbar-logo">
+        <a href="#"
+          ><img src="assets/images/logo.jpg" class="primary-icon" alt=""
+        /></a>
+      </div>
+
+      <ul class="nav-list" id="navi-list">
+        <li class="list-item"><a href="#">Inicio</a></li>
+        <li class="list-item"><a href="pages/consultorio-puericultura.html">Consultorio de Puericultura</a></li>
+        <li class="list-item"><a href="pages/asesoria-porteo.html">Asesoria de Porteo</a></li>
+<!--         <li class="list-item"><a href="pages/teleconsultas.html">Teleconsultas</a></li>
+        <li class="list-item"><a href="pages/acompañamiento.html">Acompañamiento Integral</a></li>
+        <li class="list-item"><a href="pages/visitas.html">Visitas Domiciliarias</a></li> -->
+        <li class="list-item"><a href="pages/charlas.html">Charlas y Talleres</a></li>
+        <li class="list-item"><a href="pages/contacto.html">Contacto</a></li>
+      </ul>
+      <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
     </nav>
-    <main></main>
-    <footer></footer>
+    <div class="container">
+      <section class="card">
+            <img src="assets/images/lactancia.jpg">
+            <h4>Consultorio de Lactancia</h4>
+            <p>Atención presencial en consultorio ubicado en Rosales 381, Ramos Mejía.</p>
+            <a href="pages/consultorio-puericultura.html">Más información</a>
+      </section>
+      <section class="card">
+            <img src="assets/images/porteo2.jpg">
+            <h4>Asesoria de Porteo</h4>
+            <p>Servicio de asesorías de porteo personalizadas, por teleconsulta o personal a domicilio.</p>
+            <a href="pages/asesoria-porteo.html">Más información</a>
+      </section>
+<!--       <section class="card">
+            <img src="assets/images/teleconsulta.webp">
+            <h4>Teleconsultas</h4>
+            <p>Reserva tu turno y recibí atención personalizada sin moverte de tu casa.</p>
+            <a href="pages/teleconsultas.html">Más información</a>
+      </section>
+      <section class="card">
+          <img src="assets/images/acompañamiento.jpg">
+          <h4>Acompañamiento Integral</h4>
+          <p>Servicio especial que incluye una consulta prenatal, visita al sanatorio, y visitas domiciliarias.</p>
+          <a href="pages/acompañamiento.html">Más información</a>
+      </section>
+      <section class="card">
+          <img src="assets/images/visita.jpg">
+          <h4>Visitas Domiciliarias</h4>
+          <p>Servicio de Puericultura a domicilio, respetando todas las pautas de cuidado sanitario.</p>
+          <a href="pages/visitas.html">Más información</a>
+      </section> -->
+      <section class="card">
+          <img src="assets/images/taller.jpeg">
+          <h4>Charlas y Talleres</h4>
+          <p>Charlas y talleres de Lactancia y Porteo para familias y organizaciones.</p>
+          <a href="pages/charlas.html">Más información</a>
+      </section>
+    </div>
   </body>
+  <script>
+    const toggleButton = document.getElementById("toggle-button");
+    const naviList = document.getElementById("navi-list");
+    console.log(naviList);
+    console.log(toggleButton); 
+    //  toggleButton,addEventListener("click", () => {  /* ESTO NO FUNCIONO!! */
+    //     naviList.classList.toggle('active');
+    //   });
+
+      document.getElementById("toggle-button").addEventListener("click", function() { //ESTO SI FUNCIONA ???
+        naviList.classList.toggle('active');
+        // alert("hola");
+        // naviList.classList.toggle('active');
+      });
+  </script>
 </html>

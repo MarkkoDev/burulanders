@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burulanders</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/detalle-cards.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div id="navbar-logo">
+        <a href="#"
+          ><img src="../assets/images/logo.jpg" class="primary-icon" alt=""
+        /></a>
+      </div>
+
+      <ul class="nav-list" id="navi-list">
+        <li class="list-item"><a href="../index.html">Inicio</a></li>
+        <li class="list-item"><a href="../pages/consultorio-puericultura.html">Consultorio de Puericultura</a></li>
+        <li class="list-item"><a href="../pages/asesoria-porteo.html">Asesoria de Porteo</a></li>
+<!--         <li class="list-item"><a href="../pages/teleconsultas.html">Teleconsultas</a></li>
+        <li class="list-item"><a href="../pages/acompañamiento.html">Acompañamiento Integral</a></li>
+        <li class="list-item"><a href="../pages/visitas.html">Visitas Domiciliarias</a></li> -->
+        <li class="list-item"><a href="../pages/charlas.html">Charlas y Talleres</a></li>
+        <li class="list-item"><a href="../pages/contacto.html">Contacto</a></li>
+      </ul>
+      <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
+
+    <section class="texto-detalle-cards">
+            <div class="item1"></div>
+            <div class="item2">
+              <p >Hay muchísimas situaciones en donde podes beneficiarte enormemente de una consulta con Puericultura, algunas de las más frecuentes son:</p>
+              <ul >
+                <li>
+                  <p>Estas embarazada y buscás informarte</p>
+                </li>
+                <li>
+                  <p>Experimentas dolor al amamantar</p>
+                </li>
+                <li>
+                  <p>Tenés grietas en los pezones</p>
+                </li>
+                <li>
+                  <p>Te parece que tu bebé se queda con hambre o</p>
+                </li>
+                <li>
+                  <p>Su aumento de peso no es lo que esperabas</p>
+                </li>
+                <li>
+                  <p>Tu bebé tiene alergia a la proteína de leche de vaca</p>
+                </li>
+                <li>
+                  <p>Querés armar tu banco de leche</p>
+                </li>
+                <li>
+                  <p>Querés saber más sobre cómo manejar la lactancia y los despertares nocturnos</p>
+                </li>
+                <li>
+                  <p>Tuviste que suplementar con formula a tu bebé, pero querés volver a una lactancia exclusiva</p>
+                </li>
+                <li>
+                  <p>Adoptaste y querés dar la teta</p>
+                </li>
+                <li>
+                  <p>O sentís que ya se cumplió un ciclo y deseas destetar de forma respetuosa</p>
+                </li>
+              </ul>
+              <p dir="ltr" class="CDt4Ke zfr3Q" style="line-height: 1.5; margin-left: 0; padding-left: 0; text-indent: 0;">Podés solicitar tu turno a los teléfonos 4469-1759 / 4464-1822</p>
+            </div>
+
+
+    </section>
+    <section class="map">
+      <div class="item1">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.430748338003!2d-58.57002728423579!3d-34.643823067129354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7ef0f9235a7%3A0xeda273ed25429a0e!2sRosales%20381%2C%20B1704EYG%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1653780020254!5m2!1ses!2sar" width="900" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </section>
+
+  </body>
+  <script>
+    const toggleButton = document.getElementById("toggle-button");
+    const naviList = document.getElementById("navi-list");
+    console.log(naviList);
+    console.log(toggleButton); 
+    //  toggleButton,addEventListener("click", () => {  /* ESTO NO FUNCIONO!! */
+    //     naviList.classList.toggle('active');
+    //   });
+
+      document.getElementById("toggle-button").addEventListener("click", function() { //ESTO SI FUNCIONA ???
+        naviList.classList.toggle('active');
+        // alert("hola");
+        // naviList.classList.toggle('active');
+      });
+  </script>
+</html>

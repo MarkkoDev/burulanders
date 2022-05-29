@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burulanders</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/detalle-cards.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div id="navbar-logo">
+        <a href="#"
+          ><img src="../assets/images/logo.jpg" class="primary-icon" alt=""
+        /></a>
+      </div>
+
+      <ul class="nav-list" id="navi-list">
+        <li class="list-item"><a href="../index.html">Inicio</a></li>
+        <li class="list-item"><a href="../pages/consultorio-puericultura.html">Consultorio de Puericultura</a></li>
+        <li class="list-item"><a href="../pages/asesoria-porteo.html">Asesoria de Porteo</a></li>
+<!--         <li class="list-item"><a href="../pages/teleconsultas.html">Teleconsultas</a></li>
+        <li class="list-item"><a href="../pages/acompañamiento.html">Acompañamiento Integral</a></li>
+        <li class="list-item"><a href="../pages/visitas.html">Visitas Domiciliarias</a></li> -->
+        <li class="list-item"><a href="../pages/charlas.html">Charlas y Talleres</a></li>
+        <li class="list-item"><a href="../pages/contacto.html">Contacto</a></li>
+      </ul>
+      <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
+
+    <section class="texto-detalle-cards">
+      <div class="item1"></div>
+      <div class="item2">
+ <p> Si estas todo el día con tu bebé, y además de mapaternar tenés mil obligaciones: que encargarte de la limpieza, hacer home office, controlar la tarea de los más grandes, cuidar mascotas, preparar la comida, etc.  Y sentís que ya no te alcanzan las manos, esta asesoría es para vos!</p>
+<ul><li>
+  Todas las personas que mapaternamos en algún momento nos hemos sentido así, en especial en este contexto extraordinario que estamos viviendo en donde mucha de nuestra red de sostén no está disponible.
+</li>
+<li>
+  Podes cuidar a tu bebé y liberar las manos, mientras disfrutan del contacto y fortalecen su vínculo.
+</li>
+<li>
+  El porteo tiene muchísimos beneficios para la salud.
+</li>
+<li>
+  En nuestro encuentro vamos a responder algunas de las consultas más frecuentes sobre esta hermosa herramienta de crianza:
+</li>
+<li>
+  <p>¿Qué es el porteo?</p>
+</li>
+<li>
+  <p>¿Por qué se recomienda practicarlo? ¿Cuáles son sus beneficios?</p>
+</li>
+<li>
+  <p>¿Cuáles son las pautas para hacerlo de forma segura?</p>
+</li>
+<li>
+  <p>¿Cómo sé si un portabebés es ergonómico o si lo estoy usando bien?</p>
+</li>
+<li>
+  <p>¿Cuál portabebé es el indicado para mí?</p>
+</li>
+<li>
+  <p>Método mamá canguro</p>
+</li>
+<li>
+  <p>Fular pre armado, elástico, rígido o tejido</p>
+</li>
+<li>
+  <p>Bandolera de anillas</p>
+</li>
+<li>
+  <p>Mochila ergonómica</p>
+</li></ul>
+  
+  Podemos encontrarnos por teleconsulta, visita a domicilio (consultar las zonas de cobertura) o en un taller para familias
+  
+  Podes realizar consultas y solicitar turnos al 1522516187 o al email burulanders@gmail.com
+
+
+      </div>
+</section>
+
+  </body>
+  <script>
+    const toggleButton = document.getElementById("toggle-button");
+    const naviList = document.getElementById("navi-list");
+    console.log(naviList);
+    console.log(toggleButton); 
+    //  toggleButton,addEventListener("click", () => {  /* ESTO NO FUNCIONO!! */
+    //     naviList.classList.toggle('active');
+    //   });
+
+      document.getElementById("toggle-button").addEventListener("click", function() { //ESTO SI FUNCIONA ???
+        naviList.classList.toggle('active');
+        // alert("hola");
+        // naviList.classList.toggle('active');
+      });
+  </script>
+</html>
